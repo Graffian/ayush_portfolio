@@ -3,19 +3,19 @@ const projects = [
     title: "WORSIN AI",
     desc: "Context-aware Chrome AI assistant that remembers across tabs.",
     tags: ["Chrome Extension", "AI", "Context-Aware"],
-    href: "https://github.com/graffian",
+    href: "https://github.com/Graffian/CYBAU_worsinAI",
   },
   {
     title: "ShipReel",
     desc: "Turns screen recordings into polished launch reels with AI.",
     tags: ["Next.js", "Remotion", "FFmpeg", "AI"],
-    href: "https://github.com/graffian",
+    href: "https://github.com/Graffian/shipreel",
   },
   {
     title: "BRUZZ Therapist",
     desc: "Voice-based AI assistant for conversational emotional support.",
     tags: ["Speech AI", "LLM", "Voice"],
-    href: "https://github.com/graffian",
+    href: "https://github.com/Graffian/Bruzz_therapist",
   },
   {
     title: "LevelUp Labs",
