@@ -34,20 +34,20 @@ const skills = [
 
 export default function Home() {
   return (
-    <div className="mx-auto max-w-2xl px-6 py-20">
+    <div className="mx-auto max-w-2xl px-5 py-12 sm:px-6 sm:py-20">
       {/* Hero */}
-      <header className="mb-16">
-        <h1 className="text-4xl font-semibold tracking-tight">
+      <header className="mb-10 sm:mb-16">
+        <h1 className="text-2xl font-semibold tracking-tight sm:text-4xl">
           Ayushkant Behera
         </h1>
-        <p className="mt-2 text-lg text-muted">
+        <p className="mt-1 sm:mt-2 text-base sm:text-lg text-muted">
           Full-stack developer & AI agent engineer.
         </p>
-        <p className="text-muted">20, shipping AI agents and playing with LLMs.</p>
+        <p className="text-sm sm:text-base text-muted">20, shipping AI agents and playing with LLMs.</p>
       </header>
 
       {/* Story */}
-      <section className="mb-16 space-y-4">
+      <section className="mb-10 sm:mb-16 space-y-3 sm:space-y-4">
         <p className="leading-relaxed">
           I got into programming early and never stopped. I build full-stack
           apps, developer tools, and AI-powered systems. I love integrating AI
@@ -65,17 +65,15 @@ export default function Home() {
           12 out of 200 participants. Proud of that.
         </p>
         <p className="leading-relaxed">
-          Worked as a Full Stack Developer Intern at LevelUp Labs, Hyderabad.
-          Built a gamified learning platform that tracks activity across browser
-          sessions and organizes content by learning goals. Set up Supabase for
-          backend infrastructure and Clerk for authentication. Built progress
-          tracking, content segregation, and personalized learning workflows.
+          Interned at LevelUp Labs, Hyderabad — built a gamified learning
+          platform with Supabase and Clerk for progress tracking and
+          personalized workflows.
         </p>
       </section>
 
       {/* Projects */}
-      <section className="mb-16">
-        <h2 className="mb-4 text-sm font-medium uppercase tracking-widest text-muted">
+      <section className="mb-10 sm:mb-16">
+        <h2 className="mb-3 sm:mb-4 text-xs sm:text-sm font-medium uppercase tracking-widest text-muted">
           Projects
         </h2>
         <div className="grid gap-4 sm:grid-cols-2">
@@ -85,9 +83,9 @@ export default function Home() {
               href={p.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group block rounded-lg border border-border p-4 transition-colors hover:bg-zinc-50"
+              className="group block rounded-lg border border-border p-3 sm:p-4 transition-colors hover:bg-zinc-50"
             >
-              <h3 className="font-medium">{p.title}</h3>
+              <h3 className="text-sm sm:text-base font-medium">{p.title}</h3>
               <p className="mt-1 text-sm text-muted">{p.desc}</p>
               <div className="mt-3 flex flex-wrap gap-1.5">
                 {p.tags.map((t) => (
@@ -105,8 +103,8 @@ export default function Home() {
       </section>
 
       {/* Skills */}
-      <section className="mb-16">
-        <h2 className="mb-4 text-sm font-medium uppercase tracking-widest text-muted">
+      <section className="mb-10 sm:mb-16">
+        <h2 className="mb-3 sm:mb-4 text-xs sm:text-sm font-medium uppercase tracking-widest text-muted">
           Skills
         </h2>
         <div className="flex flex-wrap gap-2">
@@ -122,8 +120,8 @@ export default function Home() {
       </section>
 
       {/* Contact & Resume */}
-      <footer className="border-t border-border pt-8">
-        <div className="flex flex-col gap-3 text-sm text-muted sm:flex-row sm:items-center sm:justify-between">
+      <footer className="border-t border-border pt-6 sm:pt-8">
+        <div className="flex flex-col gap-3 text-xs sm:text-sm text-muted sm:flex-row sm:items-center sm:justify-between">
           <div className="flex flex-col gap-1">
             <a
               href="mailto:ayushkantworks@gmail.com"
@@ -142,9 +140,9 @@ export default function Home() {
             </a>
           </div>
           <a
-            href="/resume.pdf"
+            href="/ayushkant_s_resume.pdf"
             download
-            className="inline-flex items-center justify-center rounded-md bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-opacity hover:opacity-90"
+            className="inline-flex items-center justify-center rounded-md bg-foreground px-4 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-sm font-medium text-background transition-opacity hover:opacity-90"
           >
             Download Resume
           </a>
