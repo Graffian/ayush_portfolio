@@ -1,9 +1,9 @@
 const projects = [
   {
-    title: "WORSIN AI",
-    desc: "Context-aware Chrome AI assistant that remembers across tabs.",
-    tags: ["Chrome Extension", "AI", "Context-Aware"],
-    href: "https://github.com/Graffian/CYBAU_worsinAI",
+    title: "Across",
+    desc: "Index, search, and chat with your browser history and open tabs.",
+    tags: ["Chrome Extension", "RAG", "AI"],
+    href: "https://github.com/Graffian/Across",
   },
   {
     title: "ShipReel",
