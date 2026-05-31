@@ -55,9 +55,10 @@ export default function Home() {
           and ship real software.
         </p>
         <p className="leading-relaxed">
-          Active in the coding community — built two failed startups of my own,
-          and I constantly learn from every mistake. Claude says my code is
-          &ldquo;surprisingly readable for someone who ships at 2AM.&rdquo;
+          Started freelancing when I was 19 — grew from earning $60 to $350 a
+          month, and I&rsquo;m on track to go higher. I obsess over doing the job
+          right, work day and night, and take pride in getting paid for what
+          I deliver.
         </p>
         <p className="leading-relaxed">
           Won a hackathon at IIT Mandi, and was a finalist at a Gen AI
