@@ -19,10 +19,13 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "LevelUp Labs",
-    desc: "Gamified learning platform with session tracking and personalized workflows.",
-    tags: ["Supabase", "Clerk", "React", "Progress Tracking"],
-    href: "https://github.com/Graffian/Levelup-Labs",
+    title: "Rasoori Rourkela",
+    desc: "A full-stack marketplace connecting local home cooks in Rourkela, Odisha with people looking for home-cooked meals — not restaurant takeout. Customers subscribe to a cook's weekly rotating menu, alongside one-off on-demand orders.",
+    tags: ["Next.js", "Full-stack", "Marketplace", "Subscriptions"],
+    links: [
+      { label: "GitHub", href: "https://github.com/Graffian/joyous-project-hub" },
+      { label: "Live Site", href: "https://joyous-project-hub.vercel.app/" },
+    ],
   },
   {
     title: "SelfHeal",
@@ -30,7 +33,7 @@ const projects: Project[] = [
     tags: ["Next.js", "AI Agents", "Groq", "OpenAPI"],
     links: [
       { label: "GitHub", href: "https://github.com/Graffian/SelfHeal" },
-      { label: "Live Demo", href: "https://self-heal-sigma.vercel.app/" },
+      { label: "Live Site", href: "https://self-heal-sigma.vercel.app/" },
       { label: "Watch Demo", href: "https://www.youtube.com/watch?v=pwOvrO10c5g" },
     ],
   },
