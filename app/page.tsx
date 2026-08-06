@@ -13,7 +13,10 @@ const projects: Project[] = [
     title: "Across",
     desc: "Index, search, and chat with your browser history and open tabs.",
     tags: ["Chrome Extension", "RAG", "AI"],
-    href: "https://github.com/Graffian/Across",
+    links: [
+      { label: "GitHub", href: "https://github.com/Graffian/Across" },
+      { label: "Watch Demo", href: "https://www.youtube.com/watch?v=JgB8mYWmsAU" },
+    ],
   },
   {
     title: "LevelUp Labs",
