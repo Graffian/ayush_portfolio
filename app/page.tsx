@@ -17,23 +17,20 @@ export default function AboutPage() {
         <ExtLink href="https://medium.com/@ayushkantworks">Medium</ExtLink>.
       </p>
       <p className="leading-relaxed">
-        At 18, interned at{" "}
+        At 18 — Interned at{" "}
         <ExtLink href="https://leveluplabs.space/">LevelUp Labs</ExtLink>,
-        Hyderabad, as a full-stack engineer in its early days, building a
-        gamified learning platform by laying out most of its core infrastructure
-        with Supabase and Clerk to track user progress and personalize what each
-        learner sees.
+        Hyderabad, building core infra (Supabase + Clerk) for a gamified
+        learning platform.
       </p>
       <p className="leading-relaxed">
-        At 19, started freelancing on automation and web scraping gigs —
-        including iOS game-automation bots using computer vision (OpenCV) for a
-        US client. Grew that income from $60/month to $350+/month at its peak.
+        At 19 — Freelanced on automation/scraping gigs, including
+        CV-based/DFS-based iOS game bots for intl clients; earned starting from
+        $60/mo to $350+/mo.
       </p>
       <p className="leading-relaxed">
-        At 20 (now), built and grew{" "}
-        <ExtLink href="https://rizzup.antideploy.com">RizzUp</ExtLink> — an AI
-        wingman app that helps people navigate dating, from what to text to when
-        to send it. Now at 20 paying subscribers at $15/month.
+        At 20 (now) — Built{" "}
+        <ExtLink href="https://rizzup.antideploy.com">RizzUp</ExtLink>, an AI
+        dating wingman app; now 20 paying subscribers at $15/mo.
       </p>
       <p className="leading-relaxed">
         Won a hackathon at IIT Mandi, and was a finalist at a Gen AI hackathon at
