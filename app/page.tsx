@@ -30,7 +30,7 @@ export default function AboutPage() {
       <p className="leading-relaxed">
         At 20 (now) — Built{" "}
         <ExtLink href="https://rizzup.antideploy.com">RizzUp</ExtLink>, an AI
-        dating wingman app; now 20 paying subscribers at $15/mo.
+        dating co-pilot; now 20 paying subscribers at $15/mo.
       </p>
       <p className="leading-relaxed">
         Won a hackathon at IIT Mandi, and was a finalist at a Gen AI hackathon at
