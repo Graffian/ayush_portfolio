@@ -32,11 +32,6 @@ export default function AboutPage() {
         <ExtLink href="https://rizzup.antideploy.com">RizzUp</ExtLink>, an AI
         dating co-pilot; now 20 paying subscribers at $15/mo.
       </p>
-      <p className="leading-relaxed">
-        Won a hackathon at IIT Mandi, and was a finalist at a Gen AI hackathon at
-        IIT Bhubaneswar — the only one from my state in the top 12 out of 200
-        participants.
-      </p>
     </section>
   );
 }
