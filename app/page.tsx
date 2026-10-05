@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import ContributionGraph from "@/components/contribution-graph";
 import ExtLink from "@/components/ext-link";
+import { GITHUB_LOGIN, getContributions } from "@/lib/github";
 
 export const metadata: Metadata = {
   title: "Ayushkant Behera — About",
@@ -7,31 +9,44 @@ export const metadata: Metadata = {
     "Full-stack developer & AI agent engineer. Shipping AI agents, full-stack apps, and writing about how they work under the hood.",
 };
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const contributions = await getContributions();
+
   return (
-    <section className="space-y-3 sm:space-y-4">
-      <p className="leading-relaxed">
-        I got into programming early and never stopped. I build full-stack apps
-        and AI-powered systems, and I like wiring AI agents into real products.
-        I also love researching things and writing about them on{" "}
-        <ExtLink href="https://medium.com/@ayushkantworks">Medium</ExtLink>.
-      </p>
-      <p className="leading-relaxed">
-        At 18 — Interned at{" "}
-        <ExtLink href="https://leveluplabs.space/">LevelUp Labs</ExtLink>,
-        Hyderabad, building core infra (Supabase + Clerk) for a gamified
-        learning platform.
-      </p>
-      <p className="leading-relaxed">
-        At 19 — Freelanced on automation/scraping gigs, including
-        CV-based/DFS-based iOS game bots for intl clients; earned starting from
-        $60/mo to $350+/mo.
-      </p>
-      <p className="leading-relaxed">
-        At 20 (now) — Built{" "}
-        <ExtLink href="https://rizzup.antideploy.com">RizzUp</ExtLink>, an AI
-        dating co-pilot; now 20 paying subscribers at $15/mo.
-      </p>
-    </section>
+    <>
+      <section className="space-y-3 sm:space-y-4">
+        <p className="leading-relaxed">
+          I got into programming early and never stopped. I build full-stack apps
+          and AI-powered systems, and I like wiring AI agents into real products.
+          I also love researching things and writing about them on{" "}
+          <ExtLink href="https://medium.com/@ayushkantworks">Medium</ExtLink>.
+        </p>
+        <p className="leading-relaxed">
+          At 18 — Interned at{" "}
+          <ExtLink href="https://leveluplabs.space/">LevelUp Labs</ExtLink>,
+          Hyderabad, building core infra (Supabase + Clerk) for a gamified
+          learning platform.
+        </p>
+        <p className="leading-relaxed">
+          At 19 — Freelanced on automation/scraping gigs, including
+          CV-based/DFS-based iOS game bots for intl clients; earned starting from
+          $60/mo to $350+/mo.
+        </p>
+        <p className="leading-relaxed">
+          At 20 (now) — Built{" "}
+          <ExtLink href="https://rizzup.antideploy.com">RizzUp</ExtLink>, an AI
+          dating co-pilot; now 20 paying subscribers at $15/mo.
+        </p>
+      </section>
+      {contributions ? (
+        <ContributionGraph
+          year={contributions.year}
+          totalCommits={contributions.totalCommits}
+          activeDays={contributions.activeDays}
+          weeks={contributions.weeks}
+          login={GITHUB_LOGIN}
+        />
+      ) : null}
+    </>
   );
 }
