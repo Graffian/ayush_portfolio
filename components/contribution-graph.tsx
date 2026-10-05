@@ -2,10 +2,10 @@ import type { ContributionCell } from "@/lib/github";
 
 const LEVELS = [
   "bg-zinc-800",
-  "bg-[#1c3f5f]",
-  "bg-[#2b628f]",
-  "bg-[#4a8ac2]",
-  "bg-[#93c5fd]",
+  "bg-zinc-700",
+  "bg-zinc-600",
+  "bg-[#a1a1a1]",
+  "bg-[#ededed]",
 ];
 
 function levelFor(count: number) {
@@ -43,33 +43,37 @@ export default function ContributionGraph({
         {totalCommits.toLocaleString()} commits across {activeDays} active days
         in {year}.
       </p>
-      <div className="mt-4 overflow-x-auto pb-1">
-        <div
-          role="img"
-          aria-label={`Contribution graph for ${year}: ${totalCommits} commits across ${activeDays} active days.`}
-          className="flex w-max gap-[3px]"
-        >
-          {weeks.map((week) => (
-            <div key={week[0]?.date} className="flex flex-col gap-[3px]">
-              {week.map((day) =>
-                day.inYear ? (
-                  <div
-                    key={day.date}
-                    title={`${day.count} commit${day.count === 1 ? "" : "s"} on ${day.date}`}
-                    className={`h-[11px] w-[11px] rounded-[2px] ${LEVELS[levelFor(day.count)]}`}
-                  />
-                ) : (
-                  <div key={day.date} className="h-[11px] w-[11px]" />
-                ),
-              )}
-            </div>
-          ))}
-        </div>
+      <div
+        role="img"
+        aria-label={`Contribution graph for ${year}: ${totalCommits} commits across ${activeDays} active days.`}
+        className="mt-4 flex w-full gap-[2px]"
+      >
+        {weeks.map((week) => (
+          <div
+            key={week[0]?.date}
+            className="flex min-w-0 flex-1 flex-col gap-[2px]"
+          >
+            {week.map((day) =>
+              day.inYear ? (
+                <div
+                  key={day.date}
+                  title={`${day.count} commit${day.count === 1 ? "" : "s"} on ${day.date}`}
+                  className={`aspect-square w-full rounded-[2px] ${LEVELS[levelFor(day.count)]}`}
+                />
+              ) : (
+                <div key={day.date} className="aspect-square w-full" />
+              ),
+            )}
+          </div>
+        ))}
       </div>
-      <div className="mt-3 flex items-center gap-1.5 text-xs text-muted">
+      <div className="mt-3 flex items-center gap-1.5 text-xs text-foreground">
         <span>Less</span>
         {LEVELS.map((level) => (
-          <span key={level} className={`h-[11px] w-[11px] rounded-[2px] ${level}`} />
+          <span
+            key={level}
+            className={`h-2.5 w-2.5 rounded-[2px] ${level}`}
+          />
         ))}
         <span>More</span>
       </div>
