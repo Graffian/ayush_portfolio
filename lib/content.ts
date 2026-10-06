@@ -83,7 +83,7 @@ export const articles: Article[] = [
     href: "https://medium.com/@ayushkantworks/how-i-intercepted-my-own-hinge-traffic-a-deep-dive-into-mitm-proxies-30d1b629959c",
   },
   {
-    title: "The Titanic Disaster: How a Tragedy Rewired Global Communications",
+    title: "How a Tragedy Rewired Global Communications",
     topics: ["Networking", "History"],
     desc: "How the Titanic disaster exposed weaknesses in early wireless communication — and how the aftermath, amateur radio experimentation, and the discovery of long-distance shortwave communication helped reshape global communications.",
     href: "https://medium.com/@ayushkantworks/the-titanic-disaster-how-a-tragedy-rewired-global-communications-8fa4b0dc22a7",
