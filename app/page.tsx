@@ -33,7 +33,7 @@ export default async function AboutPage() {
           $60/mo to $350+/mo.
         </p>
         <p className="leading-relaxed">
-          At 20 (now) — Found Oracle Discoverer 12.1.12 (an end-of-life
+          At 20 — Found Oracle Discoverer 12.1.12 (an end-of-life
           reporting tool) exposed with no auth on an SBI subdomain, tied to
           CVE-2014-0398; reported it and{" "}
           <ExtLink href="https://x.com/ayushh4506/status/2114718401822367746">

@@ -49,6 +49,7 @@ export async function getContributions(): Promise<ContributionData | null> {
   try {
     const res = await fetch(GRAPHQL_ENDPOINT, {
       method: "POST",
+      next: { revalidate: 1 },
       headers: {
         Authorization: `Bearer ${token}`,
         "Content-Type": "application/json",
