@@ -33,9 +33,13 @@ export default async function AboutPage() {
           $60/mo to $350+/mo.
         </p>
         <p className="leading-relaxed">
-          At 20 (now) — Built{" "}
-          <ExtLink href="https://rizzup.antideploy.com">RizzUp</ExtLink>, an AI
-          dating co-pilot; now 20 paying subscribers at $15/mo.
+          At 20 (now) — Found a vulnerability on an SBI subdomain running
+          Oracle Discoverer with known CVEs (incl. CVE-2014-0398) and reported
+          it;{" "}
+          <ExtLink href="https://x.com/ayushh4506/status/2114718401822367746">
+            posted about it on X
+          </ExtLink>
+          .
         </p>
       </section>
       {contributions ? (
